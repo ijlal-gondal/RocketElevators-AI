@@ -1,0 +1,41 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rocket elevators",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "GetAllStatusIntent",
+          "slots": [],
+          "samples": ["what is going on at rocket elevators", "all status"]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "GetElevatorStatusIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": ["elevator {id}", "what is the status of elevator {id}"]
+        }
+      ],
+      "types": []
+    }
+  }
+}
