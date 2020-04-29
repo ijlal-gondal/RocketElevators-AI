@@ -18,11 +18,21 @@
         {
           "name": "GetAllStatusIntent",
           "slots": [],
-          "samples": ["get all status"]
+          "samples": ["what is going on at rocket elevators", "all status"]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
+        },
+        {
+          "name": "GetElevatorStatusIntent",
+          "slots": [
+            {
+              "name": "id",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": ["elevator {id}", "what is the status of elevator {id}"]
         }
       ],
       "types": []
